@@ -9,21 +9,36 @@ pygame.display.set_caption('SPACE GAME !')
 blue =(0,0,255)
 white = (255,255,255)
 red = (255,0,0)
+green =(0,255,0)
+black = (0,0,0)
 basicfont = pygame.font.SysFont(None,48)
 
 
 
-windowsurface.fill(white)
+windowsurface.fill(black)
 
 
 Alien3a = '/home/carmen/elias/Alien3a.png'
 
 #pygame.image.load(Alien3a)
 
-pygame.draw.rect(windowsurface, blue, ((5,5),(50,50)))
-pygame.draw.circle(windowsurface, blue, (275,50),20,0)
+pygame.draw.rect(windowsurface, blue, ((10,10),(100,100)))
 
-pygame.draw.circle(windowsurface, red, (20,100),20,0)
+pygame.draw.circle(windowsurface, red, (60,60),20)
+
+pygame.draw.rect(windowsurface, blue, ((130,130),(100,100)))
+
+#rect 3                 
+pygame.draw.rect(windowsurface, green, ((130,10),(100,100)))
+#rect 2
+
+pygame.draw.rect(windowsurface, green, ((10,130),(100,100)))
+pygame.draw.circle(windowsurface, blue, (150,90),20,0)
+                 
+pygame.draw.rect(windowsurface, blue, ((10,250),(100,100)))
+                 
+pygame.draw.rect(windowsurface, green, ((130,250),(100,100)))
+#rect 6
 pygame.display.update()
 
 running = True
