@@ -1,10 +1,16 @@
+##
+# future tasks:
+# - make boxes = side 2, side 3, etc for each die side
+# - click on the screen and say which was clicked on
+# - box number or empty space
+
 import pygame
 from pygame.locals import *
 
 # set up pygame
 pygame.init()
 windowsurface = pygame.display.set_mode((300,400),0,32)
-pygame.display.set_caption('SPACE GAME !')
+pygame.display.set_caption('DICE GAME !')
 
 blue =(0,0,255)
 white = (255,255,255)
@@ -17,9 +23,6 @@ basicfont = pygame.font.SysFont(None,48)
 
 windowsurface.fill(white)
 
-
-
-Alien3a = pygame.image.load("Alien3a.png")
 
 pygame.draw.rect(windowsurface, blue, ((10,10),(100,100)))
 pygame.draw.circle(windowsurface, black, (60,60),20)
@@ -39,8 +42,6 @@ pygame.draw.circle(windowsurface, red, (60,300),20,0)
 pygame.draw.rect(windowsurface, green, ((130,250),(100,100)))
 pygame.draw.circle(windowsurface, blue, (180,300),20,0)
 
-
-#windowsurface.blit(Alien3a,(45,45))
 
 pygame.display.update()
 
